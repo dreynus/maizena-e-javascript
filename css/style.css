@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #1c1c1c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 2rem;
+}
+
+span {
+  color: rgb(0, 65, 0);
+  font-weight: 700;
+}
+
+.other-container {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 11px 1px #4100F5;
+  border-radius: 10px;
+}
+
+.container h1 {
+  text-align: center;
+  color: black;
+  border-radius: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  min-height: auto;
+}
+
+.planta img {
+  width: 15vw;
+  margin: auto;
+}
+
+.planta {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px;
+  margin: auto;
+  background: rgb(5, 155, 42);
+  color: white;
+  border: 1px solid rgb(0, 65, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+  font-weight: 700;
+}
+
+.btn:hover {
+  color: rgb(5, 155, 42);
+  background-color: greenyellow;
+}
+
+@media (max-width: 1200px) {
+  .planta img {
+    max-width: 50vw;
+    min-width: 40vw;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .planta img {
+    max-width: 50vw;
+    min-width: 40vw;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 5rem 3% 2rem;
+  }
+
+  .other-container {
+    width: 100%;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .container p {
+    font-size: 1.2rem;
+  }
+
+  .planta img{
+    max-width: 60vw;
+    min-width: 50vw;
+  }
+}
